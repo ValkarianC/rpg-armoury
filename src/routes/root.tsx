@@ -1,10 +1,15 @@
-
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/navbar";
+import Container from "../components/container";
 
 
 export default function Root(){
     return(
         <>
-            <h1>RPG Armoury</h1>
+            <Navbar/>
+            <Container>
+                <Outlet/>
+            </Container>
         </>
     );
 };
