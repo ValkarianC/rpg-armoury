@@ -1,0 +1,52 @@
+.navbar{
+    &__container{
+    max-height: 5rem;
+    height: 100%;
+    width: 100lvw;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    background-color: ivory;
+    border-bottom: 4px inset black;
+    }
+    &__navigation{
+        max-width: 95lvw;
+        width: 100%;
+        height: inherit;
+        max-height: 5rem;
+        margin: 0 3.9rem;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+    }
+    &__link{
+        font-size: 1.4rem;
+        grid-area: 1/1/2/4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        padding: 0 0.5rem;
+        h1{
+            margin: 0;
+        }
+        &:hover{
+            background-color: grey;
+            color: white;
+        }
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+        grid-area: 1/5/2/-1;
+        justify-content: end;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        span{
+            margin: 0 -1.2rem 0 -1.25rem;
+            z-index: 3;
+        }
+    }
+}

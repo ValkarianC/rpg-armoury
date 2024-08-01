@@ -1,0 +1,18 @@
+.container{
+    &__outer{
+        margin: 0 4rem;
+        max-width: 100lvw;
+        width: 100%;
+        min-height: 100lvh;
+        display: flex;
+        position: absolute;
+        top: 5rem;
+    }
+    &__inner{
+        margin: 0 3.4rem;
+        width: 100%;
+        min-height: 100lvh;
+        height: 100%;
+        background-color: red;
+    }
+}

@@ -1,0 +1,21 @@
+.error{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    &__title{
+        margin: 0;
+    }
+    &__return{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: underline;
+        color: navy;
+        &:hover{
+            color: purple;
+        }
+    }
+}
